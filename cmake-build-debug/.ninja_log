@@ -1,0 +1,4 @@
+# ninja log v6
+37	492	7676730066628360	build.ninja	e8dba4a3824b33a0
+29	210	7676730067728835	CMakeFiles/caesar_cipher.dir/main.c.obj	50bb518ad6ba0eda
+211	439	7676730069542448	caesar_cipher.exe	f18b3ca01cad354a
