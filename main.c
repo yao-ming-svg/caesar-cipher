@@ -35,7 +35,7 @@ int main() {
 
 
         if (scanf("%d", &choice) != 1) {
-            printf("Invalid input. Only enter a number please!\n");
+            printf("\nInvalid input. Only enter a number please!\n");
             while (getchar() != '\n'); // Clear input buffer
             continue; // Reprint menu until valid input
         }
