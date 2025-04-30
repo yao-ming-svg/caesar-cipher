@@ -33,14 +33,16 @@ int main() {
         printf("3. Quit\n");
         printf("Choice: ");
 
-        if (scanf("%d", &choice) == 1) {
-            while (getchar() != '\n'); // Clear input buffer
-            break; // Exit loop - valid input
-        } else {
-            printf("Invalid input. Only enter a number please.\n");
-            while (getchar() != '\n'); // Clear invalid input
-        }
 
+        while(1) {
+            if (scanf("%d", &choice) == 1) {
+                while (getchar() != '\n'); // Clear input buffer
+                break; // Exit loop - valid input
+            } else {
+                printf("Invalid input. Only enter a number please.\n");
+                while (getchar() != '\n'); // Clear invalid input
+            }
+        }
 
         if (choice == 1) {
             getMessage(message);
