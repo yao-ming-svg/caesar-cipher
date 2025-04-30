@@ -1,5 +1,5 @@
 /*
- * Group 8: Yiming Lu, Adam Khalil, Kevin Hernandez
+ * Group 8: Yiming Lu, Adam Khalil, Kevin Hernandez, TJ Vasquez
  * CS 2600 Section 1
  * Instructor: Danica Cariaga
  * Caesar Cipher Encoder/Decoder Project
@@ -38,7 +38,7 @@ int main() {
             break;
         }
 
-        getchar(); // Consume leftover newline
+        while (getchar() != '\n'); // Clear input buffer
 
         if (choice == 1) {
             getMessage(message);
