@@ -58,7 +58,7 @@ int main() {
             printf("Exiting program. Goodbye!\n");
             break;
         } else {
-            printf("\nInvalid input. Please try again!\n");
+            printf("\nInvalid number. Please try again!\n");
         }
     }
 
