@@ -34,16 +34,13 @@ int main() {
         printf("Choice: ");
 
 
-        while(1) {
-            if (scanf("%d", &choice) == 1) {
-                while (getchar() != '\n'); // Clear input buffer
-                break; // Exit loop - valid input
-            } else {
-                printf("\nInvalid input. Only enter a number please!\n");
-                while (getchar() != '\n'); // Clear invalid input
-                break; // Break the loop to reprint the user menu
-            }
+        if (scanf("%d", &choice) != 1) {
+            printf("Invalid input. Only enter a number please!\n");
+            while (getchar() != '\n'); // Clear input buffer
+            continue; // Reprint menu until valid input
         }
+
+        while (getchar() != '\n'); // clear valid input buffer 
 
         if (choice == 1) {
             getMessage(message);
@@ -61,7 +58,7 @@ int main() {
             printf("Exiting program. Goodbye!\n");
             break;
         } else {
-            printf("\nInvalid number. Please try again.\n");
+            printf("\nInvalid input. Please try again!\n");
         }
     }
 
