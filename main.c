@@ -41,7 +41,7 @@ int main() {
             } else {
                 printf("\nInvalid input. Only enter a number please!\n");
                 while (getchar() != '\n'); // Clear invalid input
-                continue; // Reprint the user menu
+                break; // Break the loop to reprint the user menu
             }
         }
 
@@ -61,7 +61,7 @@ int main() {
             printf("Exiting program. Goodbye!\n");
             break;
         } else {
-            printf("\nInvalid choice. Please try again.\n");
+            printf("\nInvalid number. Please try again.\n");
         }
     }
 
