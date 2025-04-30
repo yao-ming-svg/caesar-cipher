@@ -12,7 +12,7 @@
 
 #define max_length 1024
 
-// Function prototypes
+// Function declarations
 void encodeMessage(char *message, int shift);
 void decodeMessage(char *message, int shift);
 int getShiftValue();
@@ -32,7 +32,6 @@ int main() {
         printf("2. Decode a message\n");
         printf("3. Quit\n");
         printf("Choice: ");
-
 
         if (scanf("%d", &choice) != 1) { 
             printf("\nInvalid input. Only enter a number please!\n");
@@ -65,6 +64,7 @@ int main() {
     return 0;
 }
 
+// Function definitions
 void getMessage(char *message) {
     printf("\nEnter your message (max %d characters): ", max_length-1);
     fgets(message, max_length, stdin);
