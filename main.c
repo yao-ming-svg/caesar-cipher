@@ -24,7 +24,7 @@ int main() {
     int choice;
     int shift;
 
-    printf("--- Caesar Cipher Encoder/Decoder ---\n");
+    printf("\n--- Caesar Cipher Encoder/Decoder ---\n");
 
     while (1) {
         printf("\nSelect an option:\n");
@@ -33,12 +33,14 @@ int main() {
         printf("3. Quit\n");
         printf("Choice: ");
 
-        if (scanf("%d", &choice) != 1) {
-            printf("Invalid input. Exiting.\n");
-            break;
+        if (scanf("%d", &choice) == 1) {
+            while (getchar() != '\n'); // Clear input buffer
+            break; // Exit loop - valid input
+        } else {
+            printf("Invalid input. Only enter a number please.\n");
+            while (getchar() != '\n'); // Clear invalid input
         }
 
-        while (getchar() != '\n'); // Clear input buffer
 
         if (choice == 1) {
             getMessage(message);
