@@ -34,10 +34,10 @@ int main() {
         printf("Choice: ");
 
 
-        if (scanf("%d", &choice) != 1) {
+        if (scanf("%d", &choice) != 1) { 
             printf("\nInvalid input. Only enter a number please!\n");
             while (getchar() != '\n'); // Clear input buffer
-            continue; // Reprint menu until valid input
+            continue; // Reprint menu until valid numerical input
         }
 
         while (getchar() != '\n'); // clear valid input buffer 
